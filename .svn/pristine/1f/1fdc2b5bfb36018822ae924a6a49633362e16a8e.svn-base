@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_search_screen.xml",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\src\\main\\res\\menu\\activity_search_screen.xml"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_demo_main_drawer.xml",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\src\\main\\res\\menu\\activity_demo_main_drawer.xml"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\demo_main.xml",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\src\\main\\res\\menu\\demo_main.xml"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_activity_search_screen_drawer.xml",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\src\\main\\res\\menu\\activity_activity_search_screen_drawer.xml"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menus.xml",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\src\\main\\res\\menu\\menus.xml"
+    }
+]

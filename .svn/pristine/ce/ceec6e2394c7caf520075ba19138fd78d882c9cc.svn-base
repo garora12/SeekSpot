@@ -1,0 +1,131 @@
+package activities;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Patterns;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.seasia.android.seekspot.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.Unbinder;
+import models.ContactList;
+import presenters.LoginPresenter;
+import utils.Utils;
+import views.LoginView;
+
+
+public class ActivityLoginForm extends AppCompatActivity implements LoginView {
+
+    @BindView(R.id.ed_login_email)
+    EditText edEmail;
+    @BindView(R.id.ed_login_password)
+    EditText edPswd;
+    @BindView(R.id.tv_login_forgot_password)
+    TextView tvForgotPswd;
+    @BindView(R.id.tv_login_log_in)
+    TextView tvLogIn;
+   @BindView(R.id.tv_login_signup)
+    TextView tvSignUp;
+    @BindView(R.id.img_login_facebook)
+    ImageView imgFb;
+    @BindView(R.id.img_login_gmail)
+    ImageView imgGmail;
+    @BindView(R.id.img_login_twitter)
+    ImageView imgTwitter;
+    private Unbinder unbinder;
+    private LoginPresenter loginPresenter;
+
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login_form);
+        unbinder = ButterKnife.bind(this);
+        loginPresenter = new LoginPresenter(this);
+    }
+
+ @OnClick(R.id.tv_login_signup)
+    public void onSignupClicked() {
+        if (!validate()) {
+        } else {
+            Intent i = new Intent(ActivityLoginForm.this, ActivitySignupForm.class);
+            startActivity(i);
+        }
+    }
+
+
+    @OnClick(R.id.img_login_facebook)
+    public void onFbClicked() {
+        Intent i = new Intent(ActivityLoginForm.this, ActivityFBLogin.class);
+        startActivity(i);
+    }
+
+    @OnClick(R.id.img_login_twitter)
+    public void onTwitterClicked() {
+        Intent i = new Intent(ActivityLoginForm.this, ActivityTwitterLogin.class);
+        startActivity(i);
+    }
+
+    @OnClick(R.id.img_login_gmail)
+    public void onGmailClicked() {
+        Intent i = new Intent(ActivityLoginForm.this, ActivityGmailLogin.class);
+        startActivity(i);
+    }
+
+    @OnClick(R.id.tv_login_log_in)
+    public void onLoginClicked() {
+        Intent i = new Intent(ActivityLoginForm.this, ActivityTermCondition.class);
+        startActivity(i);
+ loginPresenter.loginService();
+        Utils.showToast(getApplicationContext(),"fdsdf",1000);
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unbinder.unbind();
+    }
+
+
+    private boolean validate() {
+        boolean valid = true;
+        String email = edEmail.getText().toString();
+        String password = edPswd.getText().toString();
+        if (password.isEmpty()) {
+            edPswd.setError(getString(R.string.login_cant_be_empty));
+            valid = false;
+        } else if (password.length() < 8 || password.length() > 25) {
+            edPswd.setError(getString(R.string.login_length));
+            edPswd.requestFocus();
+            valid = false;
+        }
+        if (email.isEmpty()) {
+            edEmail.setError(getString(R.string.login_cant_be_empty));
+            valid = false;
+        } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            edEmail.setError(getString(R.string.login_invalid_email));
+            valid = false;
+        }
+        return valid;
+    }
+
+    @Override
+    public void onError(String s) {
+
+    }
+
+    @Override
+    public void onSuccess(ContactList body) {
+
+    }
+}

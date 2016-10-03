@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.facebook.login.widget.ProfilePictureView
+        android:id="@+id/btn_fb_login_pictureview"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/btn_fb_login_loginbtn"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btn_fb_login_details"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Show details" />
+
+    <Button
+        android:id="@+id/btn_fb_login_continue"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Continue" />
+</LinearLayout>

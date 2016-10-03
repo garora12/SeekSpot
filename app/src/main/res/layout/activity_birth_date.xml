@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/tv_birthday_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".5"
+        android:layout_marginTop="@dimen/top_margin_bday"
+        android:text="@string/what_s_your_birthday"
+        android:textColor="@color/colorBlack"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/tv_birthday_heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".1"
+        android:text="@string/your_birthday_can_be_hidden_from_your_friends" />
+
+    <TextView
+        android:id="@+id/tv_birthday_learn_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".1"
+        android:text="@string/learn_moree"
+        android:textColor="@color/colorBlueLink" />
+
+    <EditText
+        android:id="@+id/ed_birthday_set_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight=".1"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/tap_to_select_date"
+        android:inputType="date"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_birthday_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight=".1"
+        android:background="@drawable/custom_login_btn"
+        android:text="@string/nexttt"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>
+
+
+
+
+
+

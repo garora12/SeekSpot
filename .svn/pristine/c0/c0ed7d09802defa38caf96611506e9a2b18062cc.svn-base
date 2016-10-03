@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!--<android.support.v7.widget.CardView
+        android:id="@+id/user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        card_view:cardElevation="5dp"
+        app:cardUseCompatPadding="false"
+        card_view:cardCornerRadius="5dp">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="SA"
+
+                android:textAllCaps="true"
+                android:textColor="#FFF"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/title_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@id/icon_entry"
+                android:textSize="20sp"
+                android:text="Dialog Resaturant"
+                 />
+
+            <TextView
+                android:id="@+id/dist_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:textSize="20sp"
+                android:text="100m"
+                />
+
+            <RatingBar
+                android:id="@+id/rate_entry"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_entry"
+                android:layout_toRightOf="@id/icon_entry"
+                android:numStars="5"
+                android:src="@drawable/back"
+                android:layout_marginLeft="10dp"
+                android:stepSize="2.0" />
+        </RelativeLayout>
+ <!--   </android.support.v7.widget.CardView>-->
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_chevron_right_24dp.xml",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_chevron_right_24dp.xml"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_brightness_1_24dp.xml",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_brightness_1_24dp.xml"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\icon_password.xml",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\icon_password.xml"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\icon_gender.xml",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\icon_gender.xml"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_chevron_left_24dp.xml",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_chevron_left_24dp.xml"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_history_24dp.xml",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_history_24dp.xml"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_mail_24dp.xml",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_mail_24dp.xml"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\icon_email_address.xml",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\icon_email_address.xml"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_keyboard_arrow_left_black_24dp.xml",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_keyboard_arrow_left_black_24dp.xml"
+    }
+]

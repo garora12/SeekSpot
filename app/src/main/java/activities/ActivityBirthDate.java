@@ -1,0 +1,144 @@
+package activities;
+
+import android.app.DatePickerDialog;
+import android.app.Dialog;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
+import android.support.v4.app.FragmentActivity;
+
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+
+import com.seasia.android.seekspot.R;
+
+import java.util.Calendar;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.Unbinder;
+
+public class ActivityBirthDate extends AppCompatActivity {
+    @BindView(R.id.btn_birthday_next)
+    Button btnNext;
+    @BindView(R.id.tv_birthday_learn_more)
+    TextView tvLearnMore;
+    @BindView(R.id.ed_birthday_set_date)
+    EditText edSelectDate;
+    private Unbinder unbinder;
+    private int fromMonth, fromDay = 0, fromYear;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_birth_date);
+        unbinder = ButterKnife.bind(this);
+
+        edSelectDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showTruitonDatePickerDialog(v);
+            }
+        });
+        ActionBar actionBar = getSupportActionBar();
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_icon);
+        actionBar.setHomeButtonEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
+    }
+
+
+    @OnClick(R.id.btn_birthday_next)
+    public void onNextClicked() {
+        if (!validate()) {
+        } else {
+            Intent i = new Intent(ActivityBirthDate.this, ActivityEmailAddress.class);
+            startActivity(i);
+        }
+    }
+
+
+    public void showTruitonDatePickerDialog(View v) {
+        DialogFragment newFragment = new DatePickerFragment();
+        newFragment.show(getSupportFragmentManager(), "datePicker");
+    }
+
+    private boolean validate() {
+        boolean valid = true;
+        String dateSelected = edSelectDate.getText().toString();
+        if (dateSelected.isEmpty()) {
+            edSelectDate.setError("Field can't be empty");
+            edSelectDate.requestFocus();
+            valid = false;
+        }
+        return valid;
+    }
+
+    public class DatePickerFragment extends DialogFragment implements
+            DatePickerDialog.OnDateSetListener {
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            final Calendar c = Calendar.getInstance();
+            int year = c.get(Calendar.YEAR);
+            int month = c.get(Calendar.MONTH);
+            int day = c.get(Calendar.DAY_OF_MONTH);
+            return new DatePickerDialog(getActivity(), this, year, month, day);
+        }
+
+        public void onDateSet(DatePicker view, int year, int month, int day) {
+            Calendar calendar = Calendar.getInstance();
+            fromYear = year;
+            fromMonth = month + 1;
+            fromDay = day;
+            if (fromYear < calendar.get(Calendar.YEAR)) {
+                edSelectDate.setText(fromDay + "-" + fromMonth + "-" + fromYear);
+            } else if (fromYear == calendar.get(Calendar.YEAR)) {
+                if (fromMonth < (calendar.get(Calendar.MONTH) + 1)) {
+                    edSelectDate.setText(fromDay + "-" + fromMonth + "-" + fromYear);
+                } else if (fromMonth == (calendar.get(Calendar.MONTH) + 1)) {
+                    if (fromDay <= calendar.get(Calendar.DAY_OF_MONTH)) {
+                        edSelectDate.setText(fromDay + "-" + fromMonth + "-" + fromYear);
+                    } else {
+                        edSelectDate.setText("Tap to Select Date");
+                        Toast.makeText(ActivityBirthDate.this, "Selected date can't be future date", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    Toast.makeText(ActivityBirthDate.this, "Selected date can't be future date", Toast.LENGTH_SHORT).show();
+                    edSelectDate.setText("Tap to Select Date");
+                }
+            } else {
+                edSelectDate.setText("Tap to Select Date");
+                Toast.makeText(ActivityBirthDate.this, "Selected date can't be future date", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu, menu);//Menu Resource, Menu
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+        }
+        return true;
+    }
+
+
+}

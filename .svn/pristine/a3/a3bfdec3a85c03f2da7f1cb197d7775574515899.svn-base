@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="10"
+    tools:context="activities.ActivityTermCondition">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+    <TextView
+        android:id="@+id/tv_term_cndtn_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/finish_signing_up"
+        android:textColor="@color/colorBlack"
+        android:textSize="19sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_term_cndtn_heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="@string/by_signing_up_you_agree_to_our_facebook_terms_and_that_you_have_read_our_data_policy_including_our_cookie_use_you_may_receive_sms_notification_from_facebook_and_can_opt_out_at_any_time" />
+
+
+    <TextView
+        android:id="@+id/tv_term_cndtn_heading9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="@string/contacts"
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_term_cndtn_heading10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".5"
+        android:text="@string/info_about_your_contacts_in_your_address_book_including_phone_numbers_nicknames_will_be_continuosly_uploaded_to_facebook_to_help_you_and_other_find_friends_faster_and_to_help_us_provide_a_better_service_you_will_be_able_to_manage_or_delete_contact_information_you_share_with_facebook_and_can_turn_this_off_any_time_in_the_settings" />
+
+    <TextView
+        android:id="@+id/tv_term_cndtn_learn_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".6"
+        android:text="@string/learn_more"
+        android:textColor="@color/colorBlueLink" />
+
+    <Button
+        android:id="@+id/btn_term_cndtn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_weight=".1"
+        android:background="@drawable/custom_login_btn"
+        android:text="@string/sign_upp"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>

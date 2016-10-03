@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.seasia.android.seekspot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <application android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SeekSpot"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+
+        <activity android:name="activities.ActivitySplash"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="activities.ActivitySignupForm" android:label="Create Account" />
+        <activity android:name="activities.ActivityMobilePhnNo" android:label="Mobile Number" />
+        <activity android:name="activities.ActivityName" android:label="Name" />
+        <activity android:name="activities.ActivityGender" android:label="Gender" />
+        <activity android:name="activities.ActivityEmailAddress" android:label="Email Address" />
+        <activity android:name="activities.ActivityChoosePassword" android:label="Password" />
+        <activity android:name="activities.ActivityVerifyEmailAddress" android:label="Verify Email Address" />
+        <activity android:name="activities.ActivityTermCondition" android:label="Term And Condition" />
+        <activity android:name="activities.ActivityBirthDate" android:label="Birthday" />
+        <activity android:name="activities.ActivityFBLogin"></activity>
+        <activity android:name="activities.ActivityGmailLogin"></activity>
+        <activity android:name="activities.ActivityTwitterLogin"></activity>
+        <activity android:name="activities.ActivityLoginForm" android:label="SeekSpot"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="4561e910693104e1270ea0cbbd36737457763751" />
+    </application>
+</manifest>

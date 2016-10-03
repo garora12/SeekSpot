@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="10"
+    android:layout_marginTop="19dp"
+    tools:context="activities.ActivityChoosePassword">
+
+    <TextView
+        android:id="@+id/tv_choose_pswd_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight=".2"
+        android:text="@string/choose_a_password"
+        android:textColor="@color/colorBlack"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/tv_choose_pswd_heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".2"
+        android:text="@string/remember_this_password_a_password_helps" />
+
+    <TextView
+        android:id="@+id/tv_choose_pswd_heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".5"
+        android:text="@string/prevents_strangers_from_using_your_account" />
+
+    <EditText
+        android:id="@+id/ed_choose_pswd_enter_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_weight=".5"
+        android:hint="@string/passwordd"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:layout_marginTop="20dp">
+
+    <Button
+        android:id="@+id/btn_choose_pswd_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight=".1"
+        android:background="@drawable/custom_login_btn"
+        android:text="@string/nextt"
+        android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+</LinearLayout>

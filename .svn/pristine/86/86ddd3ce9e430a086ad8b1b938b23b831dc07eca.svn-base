@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\icon_email_address.png",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\icon_email_address.png"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\icon_password.png",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\icon_password.png"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_chevron_left_24dp.png",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_chevron_left_24dp.png"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_chevron_right_24dp.png",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_chevron_right_24dp.png"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_mail_24dp.png",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_mail_24dp.png"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_brightness_1_24dp.png",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_brightness_1_24dp.png"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\icon_gender.png",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\icon_gender.png"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_history_24dp.png",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_history_24dp.png"
+    },
+    {
+        "merged": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_keyboard_arrow_left_black_24dp.png",
+        "source": "D:\\androidStudioWorkspace\\SeekSpot\\SeekSpot\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_keyboard_arrow_left_black_24dp.png"
+    }
+]

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="10"
+    android:layout_marginTop="20dp"
+    tools:context="activities.ActivityName">
+
+    <TextView
+        android:id="@+id/tv_name_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+      android:layout_marginTop="15dp"
+        android:layout_weight=".5"
+        android:text="@string/what_s_your_namee"
+        android:textColor="@color/colorBlack"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/tv_name_heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_weight=".2"
+        android:text="@string/using_your_real_name_makes_it_easier_for_friedns_to" />
+
+    <TextView
+        android:id="@+id/tv_name_heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="@string/recognize_you" />
+
+    <LinearLayout
+        android:id="@+id/name_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/ed_name_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="5"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/ed_name_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="5"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+    <Button
+        android:id="@+id/btn_name_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_weight=".1"
+        android:background="@drawable/custom_login_btn"
+        android:text="@string/next_btn"
+        android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="10"
+    tools:context="activities.ActivitySignupForm"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:id="@+id/tv_signup_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/signup_top_margin"
+        android:text="@string/join_seekspot"
+        android:textColor="@color/colorBlack"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/tv_signup_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".3"
+        android:text="@string/we_ll_help_you_create_a_new_account_in_a_few_easy" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_signup_steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+       android:layout_centerInParent="true"
+        android:text="@string/steps" />
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_signup_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_weight=".1"
+        android:background="@drawable/custom_login_btn"
+        android:text="@string/next"
+        android:textColor="@color/colorWhite" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="10"
+    tools:context="activities.ActivityEmailAddress">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="17dp">
+    <TextView
+        android:id="@+id/tv_email_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/enter_your_email_address"
+        android:textColor="@color/colorBlack"
+        android:textSize="19sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_email_heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".2"
+        android:text="@string/you_ll_use_this_email_when_you_log_in_and_if_you" />
+
+    <TextView
+        android:id="@+id/tv_email_heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".5"
+        android:text="@string/ever_need_to_reset_your_password" />
+
+    <EditText
+        android:id="@+id/et_email_enter_mailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".8"
+        android:ems="10"
+        android:hint="@string/email_addresss"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+    <Button
+        android:id="@+id/btn_emailid_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+     android:background="@drawable/custom_login_btn"
+        android:text="@string/next_btnnn"
+        android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+</LinearLayout>

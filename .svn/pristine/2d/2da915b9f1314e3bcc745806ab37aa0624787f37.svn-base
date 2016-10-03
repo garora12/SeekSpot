@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="10"
+    android:layout_marginTop="18dp"
+    tools:context="activities.ActivityGender">
+
+    <TextView
+        android:id="@+id/tv_gender_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="@string/what_s_your_gender"
+        android:textColor="@color/colorBlack"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/tv_gender_heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/providing_your_gender_creates_the_best_sekspot" />
+    <TextView
+        android:id="@+id/tv_gender_heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/experience_for_you" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reltwo"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gender_male_icon"
+            android:id="@+id/img_male_icon"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:id="@+id/tv_male"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/img_male_icon"
+             />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gender_female_icon"
+            android:id="@+id/img_female_icon"
+            android:layout_below="@+id/img_male_icon"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:id="@+id/tv_female"
+            android:layout_marginTop="20dp"
+           android:layout_toRightOf="@+id/img_female_icon"
+            android:layout_below="@+id/tv_male"
+            android:textSize="18sp"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiogrp_name"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginTop="7dp"
+                android:id="@+id/radio_gender_male"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginTop="13dp"
+                android:id="@+id/radio_gender_female"/>
+        </RadioGroup>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+    <Button
+        android:id="@+id/btn_gender_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_login_btn"
+        android:text="@string/next.btnn"
+        android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.seasia.android.seekspot"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SeekSpot"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="activities.ActivityLoginForm" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activities.ActivitySignupForm"
+            android:label="Create Account" />
+        <activity
+            android:name="activities.ActivityMobilePhnNo"
+            android:label="Mobile Number" />
+        <activity
+            android:name="activities.ActivityName"
+            android:label="Name" />
+        <activity
+            android:name="activities.ActivityGender"
+            android:label="Gender" />
+        <activity
+            android:name="activities.ActivityEmailAddress"
+            android:label="Email Address" />
+        <activity
+            android:name="activities.ActivityChoosePassword"
+            android:label="Password" />
+        <activity
+            android:name="activities.ActivityVerifyEmailAddress"
+            android:label="Verify Email Address" />
+        <activity
+            android:name="activities.ActivityTermCondition"
+            android:label="Term And Condition" />
+        <activity android:name="activities.ActivitySplash" />
+        <activity
+            android:name="activities.ActivityBirthDate"
+            android:label="Birthday" />
+
+        <!--
+            <activity
+            android:name="activities.DemoMainActivity"
+            android:label="@string/title_activity_demo_main"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        -->
+        <activity
+            android:name="activities.ActivitySearch"
+            android:label="Search"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
