@@ -15,7 +15,6 @@ public class RandomActivity extends Activity {
         super.onCreate(savedInstanceState);
         Toast.makeText(RandomActivity.this,"this is a toast",Toast.LENGTH_SHORT).show();
         Log.d("RandomActivity","Modified");
-        Log.d("RandomActivity","Test");
 
     }
 
