@@ -59,7 +59,7 @@ public class LoginTest {
     public void test(){
         onView(withId(R.id.ed_login_email)).perform(typeText(EMAIL),closeSoftKeyboard());
         onView(withId(R.id.ed_login_password)).perform(typeText(PASSWORD),closeSoftKeyboard());
-        onView(withId(R.id.btn_login_signup)).perform(click());
+        onView(withId(R.id.relSignUp)).perform(click());
         onView(withId(R.id.btn_signup_next)).perform(click());
         onView(withId(R.id.ed_mobphno_enter_mobno)).perform(typeText(MOBILENUMBER),closeSoftKeyboard());
         onView(withId(R.id.btn_mobphnno_next)).perform(click());
@@ -78,9 +78,9 @@ public class LoginTest {
         onView(withId(R.id.btn_choose_pswd_next)).perform(click());
         onView(withId(R.id.ed_verify_email_enter_mailid)).perform(typeText(EMAIL),closeSoftKeyboard());
         onView(withId(R.id.btn_verify_emailid_verify)).perform(click());
-        onView(withId(R.id.btn_term_cndtn_signup)).perform(click());
-        onView(withId(R.id.img_login_form_twitter)).perform(click());
-        onView(withId(R.id.btn_twitter_login_button)).perform(click());
+        /*onView(withId(R.id.btn_term_cndtn_signup)).perform(click());
+       /* onView(withId(R.id.img_login_twitter)).perform(click());
+        onView(withId(R.id.btn_twitter_login_button)).perform(click());*/
       /*  onView(withClassName(Matchers.equalTo(Button.class.getName()))).perform((click()));
         onView(withText("Allow")).perform(click());
         onView(withId(R.id.btn_term_cndtn_signup)).perform(click());
