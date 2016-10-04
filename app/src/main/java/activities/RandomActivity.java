@@ -13,6 +13,8 @@ public class RandomActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d("RandomActivity","Modified");
+        Log.d("RandomActivity","Test");
+
     }
     
 }
