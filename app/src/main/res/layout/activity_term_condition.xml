@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:weightSum="10"
+    android:id="@+id/ll_term_cndntn"
     tools:context="activities.ActivityTermCondition">
     <RelativeLayout
         android:layout_width="match_parent"

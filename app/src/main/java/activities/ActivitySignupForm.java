@@ -10,6 +10,7 @@ import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 
 import com.seasia.android.seekspot.R;
@@ -38,7 +39,6 @@ public class ActivitySignupForm extends AppCompatActivity {
        /* actionBar.setHomeAsUpIndicator(R.drawable.previous_icon);
         actionBar.setDisplayShowHomeEnabled(true);*/
     }
-
     @OnClick(R.id.btn_signup_next)
     public void onNextClicked() {
         Intent i = new Intent(ActivitySignupForm.this, ActivityMobilePhnNo.class);

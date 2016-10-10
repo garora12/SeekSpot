@@ -1,9 +1,12 @@
 package activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Patterns;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -47,20 +50,30 @@ public class ActivityLoginForm extends AppCompatActivity implements LoginView {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_form);
+       // getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
         unbinder = ButterKnife.bind(this);
         loginPresenter = new LoginPresenter(this);
     }
 
-    @OnClick(R.id.tv_login_signup)
+    @OnClick(R.id.relSignUp)
     public void onSignupClicked() {
-        if (false/*!validate()*/) {
+
+        if (!validate()) {
 
         } else {
             Intent i = new Intent(ActivityLoginForm.this, ActivitySignupForm.class);
             startActivity(i);
         }
     }
+    @OnClick(R.id.rel_login)
+    public void onOutsideClicked() {
+        InputMethodManager inputManager = (InputMethodManager)
+                getSystemService(Context.INPUT_METHOD_SERVICE);
 
+        inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
+                InputMethodManager.HIDE_NOT_ALWAYS);
+
+    }
 
     @OnClick(R.id.img_login_facebook)
     public void onFbClicked() {
@@ -102,6 +115,7 @@ public class ActivityLoginForm extends AppCompatActivity implements LoginView {
         String password = edPswd.getText().toString();
         if (password.isEmpty()) {
             edPswd.setError(getString(R.string.login_cant_be_empty));
+            edPswd.requestFocus();
             valid = false;
         } else if (password.length() < 8 || password.length() > 25) {
             edPswd.setError(getString(R.string.login_length));
@@ -110,8 +124,10 @@ public class ActivityLoginForm extends AppCompatActivity implements LoginView {
         }
         if (email.isEmpty()) {
             edEmail.setError(getString(R.string.login_cant_be_empty));
+            edPswd.requestFocus();
             valid = false;
         } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            edPswd.requestFocus();
             edEmail.setError(getString(R.string.login_invalid_email));
             valid = false;
         }

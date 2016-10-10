@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:weightSum="10"
+    android:id="@+id/ll_enter_mobno"
     android:layout_marginTop="7dp"
     tools:context="activities.ActivityMobilePhnNo">
 

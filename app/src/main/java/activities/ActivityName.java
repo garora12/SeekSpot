@@ -1,11 +1,13 @@
 package activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -44,6 +46,14 @@ public class ActivityName extends AppCompatActivity {
             Intent i = new Intent(ActivityName.this, ActivityGender.class);
             startActivity(i);
         }
+    }
+    @OnClick(R.id.ll_name)
+    public void onOutsideClicked() {
+        InputMethodManager inputManager = (InputMethodManager)
+                getSystemService(Context.INPUT_METHOD_SERVICE);
+
+        inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
+                InputMethodManager.HIDE_NOT_ALWAYS);
     }
 
     private boolean validate() {
